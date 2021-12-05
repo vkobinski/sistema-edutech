@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: f4f8f6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pr.gov.edutech.LoginController">
+   <children>
+      <HBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #29417c;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="gifIV" fitHeight="60.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true" smooth="false" visible="false">
+               <image>
+                  <Image url="@../../../Imagens/loading-gif-transparent-10.gif" />
+               </image>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets right="50.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="503.0" layoutY="554.0" prefHeight="79.0" prefWidth="260.0" style="-fx-background-color: #38505b;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label text="Não possui um cadastro?" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="2.0" />
+               </padding>
+            </Label>
+            <Label onMouseClicked="#chamarCadastro" text="Clique aqui" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="2.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="400.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView fitHeight="350.0" fitWidth="350.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../Imagens/edutech%20logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox alignment="BOTTOM_RIGHT" layoutX="493.0" layoutY="544.0" prefHeight="79.0" prefWidth="260.0" style="-fx-background-color: #38505b;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView fitHeight="77.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Imagens/governo-pr-modelo-01-negativo.png" />
+               </image>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="2.0" layoutY="300.0" prefHeight="300.0" prefWidth="260.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="-2.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="250.0" prefWidth="400.0" spacing="15.0">
+               <children>
+                  <Label fx:id="statusLabel">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Label>
+                  <TextField fx:id="userField" promptText="usuário">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </TextField>
+                  <PasswordField fx:id="senhaField" promptText="senha">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </PasswordField>
+                  <Button mnemonicParsing="false" onAction="#entrar" style="-fx-background-color: #29417c;" text="Entrar" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

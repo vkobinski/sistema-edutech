@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: f4f8f6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pr.gov.edutech.CadastroAlunoController">
+	<children>
+		<HBox alignment="CENTER_LEFT" layoutX="-18.0" layoutY="641.0" prefHeight="79.0" prefWidth="260.0" style="-fx-background-color: #38505b;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-0.0" AnchorPane.rightAnchor="0.0">
+			<padding>
+				<Insets left="10.0" />
+			</padding>
+         <children>
+            <ImageView fitHeight="55.0" fitWidth="55.0" onMouseClicked="#voltar" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Imagens/pngwing.com_1.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+		</HBox>
+		<Rectangle arcHeight="5.0" arcWidth="5.0" fill="#29417c" height="150.0" layoutX="56.0" layoutY="6.0" stroke="WHITE" strokeType="INSIDE" width="1400.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+		<HBox alignment="CENTER_LEFT" prefHeight="293.0" prefWidth="1280.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+			<children>
+				<ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true">
+					<image>
+						<Image url="@../../../Imagens/edutech%20logo.png" />
+					</image>
+				</ImageView>
+			</children>
+		</HBox>
+		<HBox alignment="BOTTOM_RIGHT" layoutX="493.0" layoutY="544.0" prefHeight="79.0" prefWidth="260.0" style="-fx-background-color: #38505b;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+			<children>
+				<ImageView fitHeight="77.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../../../Imagens/governo-pr-modelo-01-negativo.png" />
+					</image>
+					<HBox.margin>
+						<Insets />
+					</HBox.margin>
+				</ImageView>
+			</children>
+		</HBox>
+		<VBox alignment="CENTER_RIGHT" layoutX="28.0" layoutY="269.0" prefHeight="250.0" prefWidth="554.0" spacing="15.0">
+			<children>
+				<HBox alignment="CENTER_RIGHT" prefHeight="0.0" prefWidth="554.0" spacing="10.0">
+					<children>
+						<Label fx:id="statusLabel" text="Nome Completo:" textFill="#868686">
+							<font>
+								<Font size="24.0" />
+							</font>
+							<cursor>
+								<Cursor fx:constant="DEFAULT" />
+							</cursor>
+						</Label>
+						<TextField fx:id="nomeField" prefHeight="38.0" prefWidth="337.0">
+							<font>
+								<Font size="17.0" />
+							</font>
+							<cursor>
+								<Cursor fx:constant="DEFAULT" />
+							</cursor>
+						</TextField>
+					</children>
+				</HBox>
+				<HBox alignment="CENTER_RIGHT" prefHeight="0.0" prefWidth="554.0" spacing="10.0">
+					<children>
+						<Label fx:id="statusLabel1" text="Turma: " textFill="#868686">
+							<cursor>
+								<Cursor fx:constant="DEFAULT" />
+							</cursor>
+							<font>
+								<Font size="24.0" />
+							</font>
+						</Label>
+						<TextField fx:id="turmaField" prefHeight="38.0" prefWidth="337.0">
+							<cursor>
+								<Cursor fx:constant="DEFAULT" />
+							</cursor>
+							<font>
+								<Font size="17.0" />
+							</font>
+						</TextField>
+					</children>
+				</HBox>
+				<HBox alignment="CENTER_RIGHT" prefHeight="0.0" prefWidth="554.0" spacing="10.0">
+					<children>
+						<Label text="Turno:                             " textFill="#868686">
+							<cursor>
+								<Cursor fx:constant="DEFAULT" />
+							</cursor>
+							<font>
+								<Font size="24.0" />
+							</font>
+						</Label>
+                  <ComboBox fx:id="turnoField" prefWidth="150.0" />
+					</children>
+				</HBox>
+			</children>
+		</VBox>
+		<VBox layoutX="190.0" layoutY="150.0" prefHeight="92.0" prefWidth="292.0">
+			<children>
+				<Label prefHeight="58.0" prefWidth="244.0" text="CADASTRAR" textFill="#868686">
+					<font>
+						<Font name="System Bold" size="40.0" />
+					</font>
+				</Label>
+				<HBox alignment="CENTER_RIGHT" prefHeight="11.0" prefWidth="286.0">
+					<children>
+						<Label prefHeight="29.0" prefWidth="123.0" text="aluno (a)" textFill="#868686">
+							<font>
+								<Font name="System Italic" size="23.0" />
+							</font>
+						</Label>
+					</children>
+				</HBox>
+			</children>
+		</VBox>
+		<VBox alignment="CENTER_RIGHT" layoutX="640.0" layoutY="269.0" prefHeight="250.0" prefWidth="554.0" spacing="15.0">
+			<children>
+				<HBox alignment="CENTER_RIGHT" prefHeight="0.0" prefWidth="554.0" spacing="10.0">
+					<children>
+						<Label fx:id="statusLabel1" text="E-mail:" textFill="#868686">
+							<cursor>
+								<Cursor fx:constant="DEFAULT" />
+							</cursor>
+							<font>
+								<Font size="24.0" />
+							</font>
+						</Label>
+						<TextField fx:id="emailField" prefHeight="38.0" prefWidth="337.0">
+							<cursor>
+								<Cursor fx:constant="DEFAULT" />
+							</cursor>
+							<font>
+								<Font size="17.0" />
+							</font>
+						</TextField>
+					</children>
+				</HBox>
+				<HBox alignment="CENTER_RIGHT" prefHeight="0.0" prefWidth="554.0" spacing="10.0">
+					<children>
+						<Label fx:id="statusLabel111" text="CGM:" textFill="#868686">
+							<cursor>
+								<Cursor fx:constant="DEFAULT" />
+							</cursor>
+							<font>
+								<Font size="24.0" />
+							</font>
+						</Label>
+						<TextField fx:id="cgmField" prefHeight="38.0" prefWidth="337.0">
+							<cursor>
+								<Cursor fx:constant="DEFAULT" />
+							</cursor>
+							<font>
+								<Font size="17.0" />
+							</font>
+						</TextField>
+					</children>
+				</HBox>
+				<HBox alignment="CENTER_RIGHT" prefHeight="0.0" prefWidth="554.0" spacing="10.0">
+					<children>
+						<Label fx:id="statusLabel11" text="Status:" textFill="#868686">
+							<cursor>
+								<Cursor fx:constant="DEFAULT" />
+							</cursor>
+							<font>
+								<Font size="24.0" />
+							</font>
+						</Label>
+						<TextField fx:id="statusField" prefHeight="38.0" prefWidth="337.0">
+							<cursor>
+								<Cursor fx:constant="TEXT" />
+							</cursor>
+							<font>
+								<Font size="17.0" />
+							</font>
+						</TextField>
+					</children>
+				</HBox>
+			</children>
+		</VBox>
+		<Button fx:id="botaoEnviar" layoutX="959.0" layoutY="519.0" mnemonicParsing="false" onAction="#enviarCadastro" prefHeight="29.0" prefWidth="123.0" style="-fx-background-color: #29417c;" text="Salvar" textAlignment="CENTER" textFill="WHITE">
+			<font>
+				<Font name="System Bold" size="13.0" />
+			</font>
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+		<Label fx:id="statusLabel" layoutX="200.0" layoutY="531.0">
+			<font>
+				<Font size="24.0" />
+			</font>
+		</Label>
+	</children>
+</AnchorPane>

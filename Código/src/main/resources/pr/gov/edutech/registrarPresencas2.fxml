@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: f4f8f6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pr.gov.edutech.Presenca2Controller">
+	<children>
+      <HBox alignment="CENTER" layoutX="600.0" layoutY="168.0" prefHeight="150.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: #29417c;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+		<HBox alignment="CENTER_LEFT" layoutX="-20.0" layoutY="641.0" prefHeight="79.0" prefWidth="260.0" spacing="20.0" style="-fx-background-color: #38505b;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+			<padding>
+				<Insets left="10.0" />
+			</padding>
+			<children>
+				<ImageView fitHeight="55.0" fitWidth="55.0"
+					onMouseClicked="#voltar" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../../../Imagens/pngwing.com_1.png" />
+					</image>
+					<cursor>
+						<Cursor fx:constant="HAND" />
+					</cursor>
+				</ImageView>
+			</children>
+		</HBox>
+		<HBox alignment="CENTER_LEFT" prefHeight="263.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0">
+			<children>
+				<ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true">
+					<image>
+						<Image url="@../../../Imagens/edutech%20logo.png" />
+					</image>
+				</ImageView>
+			</children>
+		</HBox>
+		<HBox alignment="BOTTOM_RIGHT" layoutX="493.0" layoutY="544.0" prefHeight="79.0" prefWidth="260.0" style="-fx-background-color: #38505b;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+			<children>
+				<ImageView fitHeight="80.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../../../Imagens/governo-pr-modelo-01-negativo.png" />
+					</image>
+					<HBox.margin>
+						<Insets />
+					</HBox.margin>
+				</ImageView>
+			</children>
+		</HBox>
+		<VBox layoutX="190.0" layoutY="150.0" prefHeight="92.0" prefWidth="288.0">
+			<children>
+				<Label prefHeight="58.0" prefWidth="237.0" text="PRESENÇAS" textFill="#868686">
+					<font>
+						<Font name="System Bold" size="40.0" />
+					</font>
+				</Label>
+				<HBox alignment="CENTER_RIGHT" prefHeight="11.0" prefWidth="286.0">
+					<children>
+						<Label prefHeight="29.0" prefWidth="123.0" text="dos alunos" textFill="#868686">
+							<font>
+								<Font name="System Italic" size="23.0" />
+							</font>
+						</Label>
+					</children>
+				</HBox>
+			</children>
+		</VBox>
+		<Label fx:id="statusLabel" layoutX="564.0" layoutY="200.0" prefHeight="35.0" prefWidth="447.0">
+			<font>
+				<Font size="24.0" />
+			</font>
+		</Label>
+      <HBox alignment="CENTER" layoutX="4.0" layoutY="265.0" prefHeight="297.0" prefWidth="1280.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <TableView fx:id="tabela" editable="true" prefHeight="600.0" prefWidth="600.0">
+              <columns>
+                  <TableColumn fx:id="presenteTabela" prefWidth="151.0" text="Presente?" />
+                  <TableColumn fx:id="cgmTabela" prefWidth="181.0" text="CGM" />
+                  <TableColumn fx:id="nomeTabela" minWidth="0.0" prefWidth="267.0" text="Nome" />
+              </columns>
+            </TableView>
+         </children>
+      </HBox>
+      <Button layoutX="776.0" layoutY="583.0" mnemonicParsing="false" onAction="#registrar" prefHeight="31.0" prefWidth="162.0" style="-fx-background-color: #29417c;" text="Registrar Presenças" textFill="#f4f8f6">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+	</children>
+</AnchorPane>
