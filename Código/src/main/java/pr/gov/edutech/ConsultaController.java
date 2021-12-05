@@ -90,6 +90,7 @@ public class ConsultaController {
 				}
 			}
 			try {
+				System.out.println(profSelec);
 				ArrayList<Aluno> alunosProf = pd.buscarTurmas(profSelec);
 				ObservableList<Aluno> alunos = FXCollections.observableArrayList(alunosProf);
 				tabela.setItems(alunos);
